@@ -25,7 +25,7 @@ const navItems = [
     href: '/',
   },
   {
-    title: 'Orders',
+    title: 'Attendees',
     svg: (
       <svg
         width="20"
