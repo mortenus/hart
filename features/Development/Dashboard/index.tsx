@@ -38,8 +38,8 @@ const Dashboard = () => {
 
   const bannerItems: TBannerItems[] = [
     {
-      title: 'Total',
-      description: 'All orders',
+      title: 'Overall',
+      description: 'Summary of total attendance list',
       background: '#F7B918',
       count: data.totalOrders,
       svg: (
@@ -59,8 +59,8 @@ const Dashboard = () => {
       ),
     },
     {
-      title: 'New',
-      description: 'Waiting for an answer',
+      title: 'Attended',
+      description: 'Number of Attendees',
       background: '#5BCC8C',
       count: data.newStatus,
       svg: (
@@ -78,8 +78,8 @@ const Dashboard = () => {
       ),
     },
     {
-      title: 'Pending',
-      description: 'Orders in progress',
+      title: 'Expected',
+      description: 'Total people yet expected to attend',
       background: '#EB0038',
       count: data.pendingStatus,
       svg: (
@@ -100,10 +100,7 @@ const Dashboard = () => {
 
   return (
     <section className={styles.wrapper}>
-      <Headline
-        title={'Dashboard'}
-        description={`Get quick overview of what's happening at Trimsy`}
-      />
+      <Headline title={'Dashboard'} description={`Quick overview of attendance list`} />
       <div className={styles.banner}>
         <div className={styles[`banner--wrapper`]}>
           {bannerItems.map((item, key) => (
@@ -130,7 +127,7 @@ const Dashboard = () => {
         <div className={styles.chart}>
           <div className={styles.info}>
             <div className={styles.options}>
-              <Typography.Title level={3}>Latest orders</Typography.Title>
+              <Typography.Title level={3}>Latest attendees</Typography.Title>
             </div>
             {/* <div className={styles.options}>
               <div>

@@ -31,10 +31,7 @@ const Orders = () => {
 
   return (
     <section className={styles.wrapper}>
-      <Headline
-        title={'Orders'}
-        description={'List of active, canceled and pending orders right here, right now!'}
-      />
+      <Headline title={'Attendance'} description={'List of all attendances'} />
       <div className={styles.items}>
         <div className={styles.chart}>
           <div className={styles.info}>
@@ -65,20 +62,8 @@ const Orders = () => {
                     {
                       label: 'General',
                       options: [
-                        { label: 'Resume', value: 'resume' },
-                        { label: 'Cover Letter', value: 'cover' },
-                        { label: 'Careers', value: 'careers' },
-                        { label: 'Career Counseling', value: 'career_counseling' },
-                        { label: 'Job Search Strategy', value: 'job_search_strategy' },
-                        { label: 'Branding', value: 'branding' },
-                      ],
-                    },
-                    {
-                      label: 'Social Media',
-                      options: [
-                        { label: 'Social Media Management', value: 'social_media_management' },
-                        { label: 'Social Media Marketing', value: 'social_media_marketing' },
-                        { label: 'LinkedIn Optimization', value: 'linkedin_optimization' },
+                        { label: 'Attended', value: 'attemded' },
+                        { label: 'Expected', value: 'expected' },
                       ],
                     },
                   ]}
