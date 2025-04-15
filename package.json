@@ -23,6 +23,8 @@
     "ml-matrix": "^6.10.4",
     "natural": "^6.5.0",
     "next": "13.0.3",
+    "nodemailer": "^6.10.1",
+    "qrcode": "^1.5.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-spring": "^9.7.1",
